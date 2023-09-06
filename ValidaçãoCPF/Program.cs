@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Dynamic;
 using System.Resources;
 using System.Xml;
@@ -7,13 +8,20 @@ class ValidadorCPF
 {
     static void Main(string[] args)
     {
-        bool validador = false;
         Console.WriteLine("Digite seu CPF: ");
         string cpf = Console.ReadLine();
+        Console.WriteLine(ValidaCPF(cpf));
+        Console.ReadKey();
+    }
 
+
+
+
+    public static bool ValidaCPF(string CPF)
+    {
         string valorCPF;
 
-        valorCPF = cpf.Replace(".", "");//TIRAR OS CARACTERES DE . DO CPF
+        valorCPF = CPF.Replace(".", "");//TIRAR OS CARACTERES DE . DO CPF
         valorCPF = valorCPF.Replace("-", "");//TIRAR OS CARACTERES DE - DO CPF (QUE JA ESTAO SEM O .)
 
         if (valorCPF.Length == 11) //SE O CPF TIVER UM TAMANHO IGUAL A 11
@@ -36,16 +44,15 @@ class ValidadorCPF
             {
                 if ((Convert.ToInt32(valorCPF[9].ToString()) != 0))//SE A POSICAO 9 DO CPF (PRIMEIRO DIGITO VERIFICADOR), FOR DIFERENTE DE 0
                 {
-                    validador = false;
+                    return false;
                 }
-                
             }
             else if (restoCPF >= 2)//SE O RESTO DA DIVISAO FOR MAIOR OU IGUAL A 2
             {
                 int digitoVerificador = 11 - restoCPF;//DIGITO VERIFICADOR SERA IGUAL A 11 - RESTO DA DIVISAO
                 if (Convert.ToInt32(valorCPF[9].ToString()) != digitoVerificador)//SE O VALOR DA POSICAO 9 DO CPF FOR DIFERENTE DO PRIMEIRO DIGITO VERIFICADOR ACIMA
                 {
-                    validador = false;
+                    return false;
                 }
                 else
                 {
@@ -68,11 +75,11 @@ class ValidadorCPF
                     {
                         if ((Convert.ToInt32(valorCPF[10].ToString()) != 0))
                         {
-                            validador = false;
+                            return false;
                         }
                         else
                         {
-                            validador = true;
+                            return true;
 
                         }
                     }
@@ -81,24 +88,18 @@ class ValidadorCPF
                         int digitoVerificador2 = 11 - restoCPF2;
                         if ((Convert.ToInt32(valorCPF[10].ToString()) != digitoVerificador2))
                         {
-                            validador = false;
+                            return false;
                         }
-                        else
-                        {
-                            validador = true;
-
-                        }
+                       
                     }
                 }
             }
+            return true;
         }
         else//SE O CPF TIVER UM TAMANHO MAIOR QUE 11
         {
             Console.WriteLine("CPF FALSO, ULTRAPASSOU LIMITE DE CARACTERES");
-            validador = false;
+            return false;
         }
-        Console.WriteLine("Este CPF é: " + validador);
-
-        Console.ReadKey();
     }
 }
