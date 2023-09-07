@@ -1,0 +1,15 @@
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\bin\Debug\net7.0\ValidaçãoCPF2.exe
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\bin\Debug\net7.0\ValidaçãoCPF2.deps.json
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\bin\Debug\net7.0\ValidaçãoCPF2.runtimeconfig.json
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\bin\Debug\net7.0\ValidaçãoCPF2.dll
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\bin\Debug\net7.0\ValidaçãoCPF2.pdb
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.csproj.AssemblyReference.cache
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.AssemblyInfoInputs.cache
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.AssemblyInfo.cs
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.csproj.CoreCompileInputs.cache
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.dll
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\refint\ValidaçãoCPF2.dll
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.pdb
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ValidaçãoCPF2.genruntimeconfig.cache
+C:\Users\proco\source\repos\ValidaçãoCPF\ValidaçãoCPF2\obj\Debug\net7.0\ref\ValidaçãoCPF2.dll
